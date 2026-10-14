@@ -1,0 +1,5 @@
+<article class="article-card">
+  <p class="article-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time><span>{{ .ReadingTime }} {{ i18n "minRead" }}</span></p>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+</article>

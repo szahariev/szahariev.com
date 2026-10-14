@@ -1,0 +1,97 @@
+baseURL: https://szahariev.com/
+title: Stanislav Zahariev
+copyright: "© Stanislav Zahariev"
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+enableGitInfo: false
+disableHugoGeneratorInject: true
+disableKinds:
+  - taxonomy
+  - term
+
+permalinks:
+  writing: /writing/:slug/
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
+
+outputFormats:
+  RSS:
+    baseName: feed
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: false
+  highlight:
+    noClasses: false
+    style: github-dark
+    tabWidth: 2
+
+languages:
+  en:
+    locale: en-GB
+    label: English
+    weight: 1
+    title: Stanislav Zahariev
+    params:
+      author: Stanislav Zahariev
+      role: Distributed systems engineer
+      schemaJobTitle: Founder and CTO
+      description: Sovereign cloud control planes on open infrastructure — Kubernetes, OpenStack and distributed systems.
+      email: szahariev@szahariev.com
+      linkedin: https://www.linkedin.com/in/stanislav-zahariev/
+      bluesky: https://bsky.app/profile/szahariev.bsky.social
+      soverita: https://soverita.io
+      socialImage: /images/social-card.png
+      ogLocale: en_GB
+    menus:
+      main:
+        - name: Writing
+          pageRef: /writing
+          weight: 10
+        - name: Speaking
+          pageRef: /speaking
+          weight: 20
+        - name: Projects
+          pageRef: /projects
+          weight: 30
+        - name: About
+          pageRef: /about
+          weight: 40
+  bg:
+    locale: bg-BG
+    label: Български
+    weight: 2
+    title: Станислав Захариев
+    params:
+      author: Станислав Захариев
+      role: Инженер по разпределени системи
+      schemaJobTitle: Основател и технически директор
+      description: Контролни равнини за суверенен облак върху отворена инфраструктура — Kubernetes, OpenStack и разпределени системи.
+      email: szahariev@szahariev.com
+      linkedin: https://www.linkedin.com/in/stanislav-zahariev/
+      bluesky: https://bsky.app/profile/szahariev.bsky.social
+      soverita: https://soverita.io
+      socialImage: /images/social-card.png
+      ogLocale: bg_BG
+    menus:
+      main:
+        - name: Статии
+          pageRef: /writing
+          weight: 10
+        - name: Лекции
+          pageRef: /speaking
+          weight: 20
+        - name: Проекти
+          pageRef: /projects
+          weight: 30
+        - name: За мен
+          pageRef: /about
+          weight: 40

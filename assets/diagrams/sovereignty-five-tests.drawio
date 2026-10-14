@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-11T00:00:00.000Z" agent="szahariev.com" version="28.2.8" type="device">
+  <diagram id="sovereignty-five-tests" name="Five tests">
+    <mxGraphModel dx="760" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="760" pageHeight="370" math="0" shadow="0" background="#0B0E16">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="Five claims, five tests" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;overflow=visible;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="6" width="350" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="centre-stem" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="108" as="sourcePoint"/>
+            <mxPoint x="380" y="129" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="horizontal-branch" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="84" y="129" as="sourcePoint"/>
+            <mxPoint x="676" y="129" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="authority-branch" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="84" y="129" as="sourcePoint"/><mxPoint x="84" y="151" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="custody-branch" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="232" y="129" as="sourcePoint"/><mxPoint x="232" y="151" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="evidence-branch" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="380" y="129" as="sourcePoint"/><mxPoint x="380" y="151" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="continuity-branch" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="528" y="129" as="sourcePoint"/><mxPoint x="528" y="151" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="exit-branch" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="676" y="129" as="sourcePoint"/><mxPoint x="676" y="151" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="operator-control" value="Operator control" style="rounded=1;whiteSpace=nowrap;overflow=visible;html=0;fillColor=#141927;strokeColor=#4F8FDC;strokeWidth=2;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=17;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="274" y="53" width="212" height="55" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="authority" value="" style="rounded=1;whiteSpace=wrap;html=0;container=1;collapsible=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="16" y="151" width="136" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="authority-number" value="01" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Menlo;fontColor=#8896A8;fontSize=11;fontStyle=1;connectable=0;" vertex="1" parent="authority">
+          <mxGeometry x="14" y="10" width="35" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="authority-label" value="Authority" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;connectable=0;" vertex="1" parent="authority">
+          <mxGeometry x="0" y="37" width="136" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="authority-verb" value="REVOKE" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=12;fontStyle=1;connectable=0;" vertex="1" parent="authority">
+          <mxGeometry x="0" y="68" width="136" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="authority-note" value="Can every&#xa;external access&#xa;path be removed?" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=nowrap;overflow=visible;fontFamily=Helvetica;fontColor=#8896A8;fontSize=11;spacingTop=0;connectable=0;" vertex="1" parent="authority">
+          <mxGeometry x="8" y="108" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="key-custody" value="" style="rounded=1;whiteSpace=wrap;html=0;container=1;collapsible=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="164" y="151" width="136" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="key-custody-number" value="02" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Menlo;fontColor=#8896A8;fontSize=11;fontStyle=1;connectable=0;" vertex="1" parent="key-custody">
+          <mxGeometry x="14" y="10" width="35" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="key-custody-label" value="Key custody" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;connectable=0;" vertex="1" parent="key-custody">
+          <mxGeometry x="0" y="37" width="136" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="key-custody-verb" value="WITHHOLD" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=12;fontStyle=1;connectable=0;" vertex="1" parent="key-custody">
+          <mxGeometry x="0" y="68" width="136" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="key-custody-note" value="Can key access be&#xa;withheld without&#xa;losing the key?" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=nowrap;overflow=visible;fontFamily=Helvetica;fontColor=#8896A8;fontSize=11;spacingTop=0;connectable=0;" vertex="1" parent="key-custody">
+          <mxGeometry x="8" y="108" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="evidence" value="" style="rounded=1;whiteSpace=wrap;html=0;container=1;collapsible=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="312" y="151" width="136" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="evidence-number" value="03" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Menlo;fontColor=#8896A8;fontSize=11;fontStyle=1;connectable=0;" vertex="1" parent="evidence">
+          <mxGeometry x="14" y="10" width="35" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="evidence-label" value="Evidence" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;connectable=0;" vertex="1" parent="evidence">
+          <mxGeometry x="0" y="37" width="136" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="evidence-verb" value="VERIFY" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=12;fontStyle=1;connectable=0;" vertex="1" parent="evidence">
+          <mxGeometry x="0" y="68" width="136" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="evidence-note" value="Can a retained&#xa;copy be checked&#xa;independently?" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=nowrap;overflow=visible;fontFamily=Helvetica;fontColor=#8896A8;fontSize=11;spacingTop=0;connectable=0;" vertex="1" parent="evidence">
+          <mxGeometry x="8" y="108" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="continuity" value="" style="rounded=1;whiteSpace=wrap;html=0;container=1;collapsible=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="460" y="151" width="136" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="continuity-number" value="04" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Menlo;fontColor=#8896A8;fontSize=11;fontStyle=1;connectable=0;" vertex="1" parent="continuity">
+          <mxGeometry x="14" y="10" width="35" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="continuity-label" value="Continuity" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;connectable=0;" vertex="1" parent="continuity">
+          <mxGeometry x="0" y="37" width="136" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="continuity-verb" value="DISCONNECT" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=12;fontStyle=1;connectable=0;" vertex="1" parent="continuity">
+          <mxGeometry x="0" y="68" width="136" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="continuity-note" value="What still works&#xa;without outside&#xa;services?" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=nowrap;overflow=visible;fontFamily=Helvetica;fontColor=#8896A8;fontSize=11;spacingTop=0;connectable=0;" vertex="1" parent="continuity">
+          <mxGeometry x="8" y="108" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="exit" value="" style="rounded=1;whiteSpace=wrap;html=0;container=1;collapsible=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="608" y="151" width="136" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="exit-number" value="05" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Menlo;fontColor=#8896A8;fontSize=11;fontStyle=1;connectable=0;" vertex="1" parent="exit">
+          <mxGeometry x="14" y="10" width="35" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="exit-label" value="Exit" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;connectable=0;" vertex="1" parent="exit">
+          <mxGeometry x="0" y="37" width="136" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="exit-verb" value="REHEARSE" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=12;fontStyle=1;connectable=0;" vertex="1" parent="exit">
+          <mxGeometry x="0" y="68" width="136" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="exit-note" value="Can state move and&#xa;old access be&#xa;revoked?" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=nowrap;overflow=visible;fontFamily=Helvetica;fontColor=#8896A8;fontSize=11;spacingTop=0;connectable=0;" vertex="1" parent="exit">
+          <mxGeometry x="8" y="108" width="120" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

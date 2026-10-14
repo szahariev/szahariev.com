@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <div class="shell page-shell{{ with .Params.portrait }} page-shell-with-aside{{ end }}">
+    <article class="prose">
+      <header class="page-header">
+        {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ if eq .Section "writing" }}
+          <p class="article-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+            {{ if ne .Lastmod .Date }}<span>{{ i18n "updated" }} {{ .Lastmod | time.Format ":date_long" }}</span>{{ end }}
+            <span>{{ .ReadingTime }} {{ i18n "minRead" }}</span>
+          </p>
+        {{ end }}
+      </header>
+      {{ .Content }}
+    </article>
+    {{ with .Params.portrait }}
+    <aside class="portrait-card">
+      <img src="{{ . }}" alt="{{ $.Params.portraitAlt }}" width="768" height="1024">
+    </aside>
+    {{ end }}
+  </div>
+{{ end }}

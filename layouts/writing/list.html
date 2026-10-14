@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <div class="shell page-shell writing-index">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      <p class="page-intro">{{ .Params.intro }}</p>
+    </header>
+    {{ if .Pages }}
+      <div class="article-list">
+        {{ range .Pages.ByDate.Reverse }}{{ partial "article-card.html" . }}{{ end }}
+      </div>
+    {{ else }}
+      <div class="empty-state">
+        <p class="eyebrow">{{ i18n "firstEssayProgress" }}</p>
+        <h2>{{ .Params.firstEssayTitle }}</h2>
+        <p>{{ .Params.firstEssayText }}</p>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

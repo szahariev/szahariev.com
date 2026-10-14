@@ -1,0 +1,36 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}" aria-label="{{ i18n "homeLabel" }}">
+      <span class="brand-mark" aria-hidden="true">SZ</span>
+      <span class="brand-copy">
+        <strong>{{ site.Params.author }}</strong>
+        <small>{{ site.Params.role }}</small>
+      </span>
+    </a>
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="{{ i18n "primaryNavigation" }}">
+        {{- range site.Menus.main }}
+          {{- $active := or ($.IsMenuCurrent .Menu .) ($.HasMenuCurrent .Menu .) }}
+          <a href="{{ .URL }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+        {{- end }}
+      </nav>
+      <div class="site-tools">
+        {{- $currentLanguage := site.Language.Lang -}}
+        <nav class="language-switcher" aria-label="{{ i18n "languageSwitcher" }}">
+          {{- range .AllTranslations }}
+            <a href="{{ .RelPermalink }}" lang="{{ .Language.Locale }}" hreflang="{{ .Language.Locale }}"{{ if eq .Language.Lang $currentLanguage }} class="active" aria-current="page"{{ end }}>{{ upper .Language.Lang }}</a>
+          {{- end }}
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle
+          data-light-label="{{ i18n "lightTheme" }}"
+          data-dark-label="{{ i18n "darkTheme" }}"
+          data-switch-to-light="{{ i18n "switchToLight" }}"
+          data-switch-to-dark="{{ i18n "switchToDark" }}"
+          aria-label="{{ i18n "theme" }}">
+          <span class="theme-toggle-icon" data-theme-icon aria-hidden="true">◐</span>
+          <span data-theme-label>{{ i18n "theme" }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

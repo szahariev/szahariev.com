@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <nav class="footer-links" aria-label="{{ i18n "contactAndSocial" }}">
+      <a href="mailto:{{ site.Params.email }}">{{ i18n "email" }}</a>
+      <a href="{{ site.Params.linkedin }}" rel="me">LinkedIn</a>
+      <a href="{{ site.Params.bluesky }}" rel="me">Bluesky</a>
+      <a href="{{ site.Params.soverita }}">Soverita</a>
+      {{ with site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </nav>
+    <p class="footer-meta">&copy; {{ now.Year }} {{ site.Params.author }} &middot; {{ i18n "noTracking" }}</p>
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+{{- $src := .Get "src" -}}
+{{- $caption := .Get "caption" -}}
+{{- with resources.Get (printf "diagrams/%s" $src) -}}
+<figure class="article-diagram">
+  <div class="article-diagram-viewport" tabindex="0">
+    {{- .Content | safeHTML -}}
+  </div>
+  {{- with $caption }}<figcaption>{{ . }}</figcaption>{{ end -}}
+</figure>
+{{- else -}}
+  {{- errorf "Article diagram not found: %s" $src -}}
+{{- end -}}
