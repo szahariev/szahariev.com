@@ -390,7 +390,7 @@ p {
   right: -2rem;
   width: min(43vw, 31rem);
   aspect-ratio: 1;
-  background: url("/images/hero-control-plane-topology-v2.webp") center / contain no-repeat;
+  background: url("../images/hero-control-plane-topology-v2.webp") center / contain no-repeat;
   content: "";
   opacity: 0.72;
   filter: var(--hero-filter);

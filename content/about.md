@@ -1,7 +1,7 @@
 ---
 title: About
 description: Stanislav Zahariev is the founder and CTO of Soverita and a distributed-systems engineer based in Sofia, Bulgaria.
-portrait: /images/headshot-portrait.jpeg
+portrait: images/headshot-portrait.jpeg
 portraitAlt: Portrait of Stanislav Zahariev
 ---
 

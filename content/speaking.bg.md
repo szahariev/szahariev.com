@@ -73,7 +73,7 @@ cloud controller manager и CSI драйвъра и показва кой ком
 
 Станислав Захариев е основател и технически директор на Soverita, където изгражда контролни равнини за суверенен облак върху отворена инфраструктура. Повече от двадесет години той изгражда разпределени системи в телекомуникациите, финтех и AI. Пише и говори за Kubernetes, OpenStack и за това какво се случва, когато облачната архитектура се срещне с реални системи и реални откази.
 
-[Изтеглете портретна снимка](/images/headshot-portrait.jpeg) ·
-[Изтеглете квадратна снимка](/images/headshot-square.jpeg) ·
+[Изтеглете портретна снимка]({{< static-url "images/headshot-portrait.jpeg" >}}) ·
+[Изтеглете квадратна снимка]({{< static-url "images/headshot-square.jpeg" >}}) ·
 [LinkedIn](https://www.linkedin.com/in/stanislav-zahariev/) ·
 [Bluesky](https://bsky.app/profile/szahariev.bsky.social)

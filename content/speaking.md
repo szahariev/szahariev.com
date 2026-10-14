@@ -91,7 +91,7 @@ built distributed systems across carrier-grade telephony, fintech and AI. He wri
 and speaks about Kubernetes, OpenStack and what happens when cloud architecture
 meets real systems and real failures.
 
-[Download portrait headshot](/images/headshot-portrait.jpeg) ·
-[Download square headshot](/images/headshot-square.jpeg) ·
+[Download portrait headshot]({{< static-url "images/headshot-portrait.jpeg" >}}) ·
+[Download square headshot]({{< static-url "images/headshot-square.jpeg" >}}) ·
 [LinkedIn](https://www.linkedin.com/in/stanislav-zahariev/) ·
 [Bluesky](https://bsky.app/profile/szahariev.bsky.social)

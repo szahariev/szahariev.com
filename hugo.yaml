@@ -49,7 +49,7 @@ languages:
       linkedin: https://www.linkedin.com/in/stanislav-zahariev/
       bluesky: https://bsky.app/profile/szahariev.bsky.social
       soverita: https://soverita.io
-      socialImage: /images/social-card.png
+      socialImage: images/social-card.png
       ogLocale: en_GB
     menus:
       main:
@@ -79,7 +79,7 @@ languages:
       linkedin: https://www.linkedin.com/in/stanislav-zahariev/
       bluesky: https://bsky.app/profile/szahariev.bsky.social
       soverita: https://soverita.io
-      socialImage: /images/social-card.png
+      socialImage: images/social-card.png
       ogLocale: bg_BG
     menus:
       main:

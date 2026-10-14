@@ -1,7 +1,7 @@
 ---
 title: За мен
 description: Станислав Захариев е основател и технически директор на Soverita и инженер по разпределени системи в София.
-portrait: /images/headshot-portrait.jpeg
+portrait: images/headshot-portrait.jpeg
 portraitAlt: Портрет на Станислав Захариев
 ---
 

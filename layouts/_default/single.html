@@ -16,7 +16,7 @@
     </article>
     {{ with .Params.portrait }}
     <aside class="portrait-card">
-      <img src="{{ . }}" alt="{{ $.Params.portraitAlt }}" width="768" height="1024">
+      <img src="{{ . | relURL }}" alt="{{ $.Params.portraitAlt }}" width="768" height="1024">
     </aside>
     {{ end }}
   </div>
