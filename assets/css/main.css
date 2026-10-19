@@ -16,8 +16,6 @@
   --link-hover: #fff;
   --card-from: rgb(20 25 39 / 72%);
   --card-to: rgb(13 18 32 / 55%);
-  --band-bg: rgb(13 18 32 / 78%);
-  --band-glow: rgb(79 143 220 / 10%);
   --empty-bg: rgb(20 25 39 / 60%);
   --button-primary: #245a96;
   --button-primary-hover: #2f6fb6;
@@ -48,8 +46,6 @@
   --link-hover: #050b14;
   --card-from: rgb(255 255 255 / 94%);
   --card-to: rgb(237 242 247 / 78%);
-  --band-bg: rgb(237 243 249 / 88%);
-  --band-glow: rgb(47 110 174 / 10%);
   --empty-bg: rgb(255 255 255 / 72%);
   --button-primary: #245a96;
   --button-primary-hover: #194d83;
@@ -77,8 +73,6 @@
     --link-hover: #050b14;
     --card-from: rgb(255 255 255 / 94%);
     --card-to: rgb(237 242 247 / 78%);
-    --band-bg: rgb(237 243 249 / 88%);
-    --band-glow: rgb(47 110 174 / 10%);
     --empty-bg: rgb(255 255 255 / 72%);
     --button-primary: #245a96;
     --button-primary-hover: #194d83;
@@ -470,6 +464,10 @@ p {
   padding-top: clamp(2.75rem, 4vw, 3.75rem);
 }
 
+.section + .section {
+  padding-top: 0;
+}
+
 .section-heading {
   max-width: 50rem;
   margin-bottom: clamp(1.75rem, 3vw, 2.5rem);
@@ -516,30 +514,6 @@ p {
 }
 
 .card p {
-  margin-top: 1.25rem;
-  color: var(--mist);
-}
-
-.section-band {
-  border-block: 1px solid var(--slate);
-  background:
-    linear-gradient(90deg, var(--band-glow), transparent 35%),
-    var(--band-bg);
-}
-
-.split-feature {
-  display: grid;
-  grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
-  gap: clamp(3rem, 9vw, 8rem);
-  align-items: start;
-}
-
-.feature-copy {
-  max-width: 39rem;
-  font-size: 1.17rem;
-}
-
-.feature-copy p + p {
   margin-top: 1.25rem;
   color: var(--mist);
 }
@@ -892,7 +866,6 @@ p {
   }
 
   .card-grid,
-  .split-feature,
   .page-shell-with-aside {
     grid-template-columns: 1fr;
   }

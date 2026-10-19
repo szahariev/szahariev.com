@@ -3,8 +3,6 @@ title: Stanislav Zahariev
 description: Stanislav Zahariev builds sovereign cloud control planes on open infrastructure. His work spans Kubernetes, OpenStack and distributed systems.
 heroTitle: Solving the hard parts of cloud control planes
 heroIntro: Kubernetes and the infrastructure beneath it often operate as separate systems. I'm building the control plane that connects them into a working cloud platform.
-soveritaIntro: Soverita is a European sovereign cloud governance platform. It lets organizations use their existing infrastructure as a self-service cloud while keeping control over the systems that operate it.
-soveritaWork: I design and implement the APIs and workflows connecting Kubernetes to infrastructure platforms. The work involves provisioning machines, attaching storage, configuring routes and handling resources left behind when operations are interrupted.
 writingTitle: How the pieces fit and where they fail
 firstEssayTitle: What makes a cloud sovereign?
 firstEssayText: The first essay examines five architectural invariants behind operator independence, with practical ways to verify each one in a running system.

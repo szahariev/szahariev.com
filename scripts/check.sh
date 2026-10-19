@@ -7,7 +7,7 @@ trap 'rm -rf "$build_dir"' EXIT INT TERM
 
 hugo --source "$site_dir" --destination "$build_dir" --gc --minify
 
-required_paths="index.html writing/index.html speaking/index.html projects/index.html about/index.html feed.xml sitemap.xml 404.html bg/index.html bg/writing/index.html bg/speaking/index.html bg/projects/index.html bg/about/index.html bg/feed.xml"
+required_paths="index.html writing/index.html speaking/index.html about/index.html feed.xml sitemap.xml 404.html bg/index.html bg/writing/index.html bg/speaking/index.html bg/about/index.html bg/feed.xml"
 for path in $required_paths; do
   if [ ! -s "$build_dir/$path" ]; then
     printf 'Missing or empty output: %s\n' "$path" >&2

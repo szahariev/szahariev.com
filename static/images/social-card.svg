@@ -13,7 +13,7 @@
   <circle cx="1050" cy="105" r="142" fill="none" stroke="#71b0f5" stroke-opacity=".18" stroke-width="2"/>
   <circle cx="1050" cy="105" r="76" fill="none" stroke="#71b0f5" stroke-opacity=".24" stroke-width="2"/>
   <circle cx="1110" cy="540" r="310" fill="#2c3a52" opacity=".18"/>
-  <text x="126" y="176" fill="#c4cdd8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="27" letter-spacing="4">STANISLAV ZAHARIEV · FOUNDER &amp; CTO</text>
+  <text x="126" y="176" fill="#c4cdd8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="21" letter-spacing="2.8">STANISLAV ZAHARIEV · DISTRIBUTED SYSTEMS ENGINEER</text>
   <text x="126" y="293" fill="#eef1f5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="66" font-weight="700">Sovereign cloud</text>
   <text x="126" y="373" fill="#eef1f5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="66" font-weight="700">control planes</text>
   <text x="126" y="448" fill="#8896a8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="32">on open infrastructure</text>

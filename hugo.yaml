@@ -43,12 +43,11 @@ languages:
     params:
       author: Stanislav Zahariev
       role: Distributed systems engineer
-      schemaJobTitle: Founder and CTO
+      schemaJobTitle: Distributed systems engineer
       description: Sovereign cloud control planes on open infrastructure — Kubernetes, OpenStack and distributed systems.
       email: szahariev@szahariev.com
       linkedin: https://www.linkedin.com/in/stanislav-zahariev/
       bluesky: https://bsky.app/profile/szahariev.bsky.social
-      soverita: https://soverita.io
       socialImage: images/social-card.png
       ogLocale: en_GB
     menus:
@@ -59,12 +58,9 @@ languages:
         - name: Speaking
           pageRef: /speaking
           weight: 20
-        - name: Projects
-          pageRef: /projects
-          weight: 30
         - name: About
           pageRef: /about
-          weight: 40
+          weight: 30
   bg:
     locale: bg-BG
     label: Български
@@ -73,12 +69,11 @@ languages:
     params:
       author: Станислав Захариев
       role: Инженер по разпределени системи
-      schemaJobTitle: Основател и технически директор
+      schemaJobTitle: Инженер по разпределени системи
       description: Контролни равнини за суверенен облак върху отворена инфраструктура — Kubernetes, OpenStack и разпределени системи.
       email: szahariev@szahariev.com
       linkedin: https://www.linkedin.com/in/stanislav-zahariev/
       bluesky: https://bsky.app/profile/szahariev.bsky.social
-      soverita: https://soverita.io
       socialImage: images/social-card.png
       ogLocale: bg_BG
     menus:
@@ -89,9 +84,6 @@ languages:
         - name: Лекции
           pageRef: /speaking
           weight: 20
-        - name: Проекти
-          pageRef: /projects
-          weight: 30
         - name: За мен
           pageRef: /about
-          weight: 40
+          weight: 30

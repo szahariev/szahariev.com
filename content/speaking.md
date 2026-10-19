@@ -85,11 +85,11 @@ about what you run to find out whether either one is telling the truth.
 
 ## Speaker biography
 
-Stanislav Zahariev is the founder and CTO of Soverita, where he builds sovereign
-cloud control planes on open infrastructure. For more than twenty years, he has
-built distributed systems across carrier-grade telephony, fintech and AI. He writes
-and speaks about Kubernetes, OpenStack and what happens when cloud architecture
-meets real systems and real failures.
+Stanislav Zahariev is a distributed systems engineer working on sovereign cloud
+control planes and open infrastructure. For more than twenty years, he has built
+distributed systems across carrier-grade telephony, fintech and AI. He writes and
+speaks about Kubernetes, OpenStack and what happens when cloud architecture meets
+real systems and real failures.
 
 [Download portrait headshot]({{< static-url "images/headshot-portrait.jpeg" >}}) ·
 [Download square headshot]({{< static-url "images/headshot-square.jpeg" >}}) ·

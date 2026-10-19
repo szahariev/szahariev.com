@@ -4,7 +4,6 @@
       <a href="mailto:{{ site.Params.email }}">{{ i18n "email" }}</a>
       <a href="{{ site.Params.linkedin }}" rel="me">LinkedIn</a>
       <a href="{{ site.Params.bluesky }}" rel="me">Bluesky</a>
-      <a href="{{ site.Params.soverita }}">Soverita</a>
       {{ with site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
     </nav>
     <p class="footer-meta">&copy; {{ now.Year }} {{ site.Params.author }} &middot; {{ i18n "noTracking" }}</p>
