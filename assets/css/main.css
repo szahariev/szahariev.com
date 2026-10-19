@@ -658,6 +658,75 @@ p {
   margin-top: 0.6rem;
 }
 
+.career-timeline {
+  position: relative;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.career-timeline::before {
+  position: absolute;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  left: 10rem;
+  width: 1px;
+  background: var(--steel);
+  content: "";
+}
+
+.career-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 3rem;
+  padding-block: 0.15rem 2.25rem;
+}
+
+.career-entry::before {
+  position: absolute;
+  top: 0.42rem;
+  left: 9.68rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid var(--accent-strong);
+  border-radius: 50%;
+  background: var(--void);
+  content: "";
+}
+
+.career-entry:last-child {
+  padding-bottom: 0.15rem;
+}
+
+.career-period {
+  margin: 0;
+  color: var(--accent-soft) !important;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.career-copy h3 {
+  margin: 0 !important;
+  color: var(--frost);
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.career-copy p {
+  margin-top: 0.55rem;
+  color: var(--mist);
+  font-size: 0.98rem;
+}
+
+.career-timeline + p {
+  margin-top: 3.25rem !important;
+}
+
 .prose code {
   padding: 0.1rem 0.32rem;
   border: 1px solid var(--steel);
@@ -879,6 +948,28 @@ p {
     position: static;
     width: min(100%, 20rem);
     grid-row: 1;
+  }
+
+  .career-timeline {
+    padding-left: 1.65rem;
+  }
+
+  .career-timeline::before {
+    left: 0.3rem;
+  }
+
+  .career-entry {
+    display: block;
+    padding-block: 0 2rem;
+  }
+
+  .career-entry::before {
+    top: 0.24rem;
+    left: -1.67rem;
+  }
+
+  .career-copy h3 {
+    margin-top: 0.35rem !important;
   }
 }
 

@@ -1,0 +1,11 @@
+<ol class="career-timeline">
+  {{- range .Page.Params.career }}
+  <li class="career-entry">
+    <p class="career-period">{{ .period }}</p>
+    <div class="career-copy">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+    </div>
+  </li>
+  {{- end }}
+</ol>
