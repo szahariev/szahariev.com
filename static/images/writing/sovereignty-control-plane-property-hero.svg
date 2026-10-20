@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Five tests for operator control</title>
+  <desc id="desc">Authority, keys, evidence, continuity and exit connect to operator control.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b12"/>
+      <stop offset="1" stop-color="#141927"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="600" cy="315" r="265" fill="none" stroke="#2c3a52" stroke-width="2"/>
+  <circle cx="600" cy="315" r="190" fill="#4f8fdc" opacity=".05"/>
+  <path d="M365 138L485 260M365 315H465M365 492L485 370M835 220L735 275M835 410L735 355" fill="none" stroke="#4f8fdc" stroke-width="2" stroke-opacity=".7"/>
+  <rect x="465" y="245" width="270" height="140" rx="8" fill="#141927" stroke="#71b0f5" stroke-width="2"/>
+  <text x="600" y="305" text-anchor="middle" fill="#a8d2ff" font-family="Menlo, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="2">OPERATOR</text>
+  <text x="600" y="345" text-anchor="middle" fill="#eef1f5" font-family="Arial, sans-serif" font-size="32" font-weight="700">CONTROL</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="18" font-weight="700">
+    <rect x="105" y="98" width="260" height="80" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="135" y="146" fill="#eef1f5">01  AUTHORITY</text>
+    <rect x="105" y="275" width="260" height="80" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="135" y="323" fill="#eef1f5">02  KEYS</text>
+    <rect x="105" y="452" width="260" height="80" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="135" y="500" fill="#eef1f5">03  EVIDENCE</text>
+    <rect x="835" y="180" width="260" height="80" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="865" y="228" fill="#eef1f5">04  CONTINUITY</text>
+    <rect x="835" y="370" width="260" height="80" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="865" y="418" fill="#eef1f5">05  EXIT</text>
+  </g>
+</svg>

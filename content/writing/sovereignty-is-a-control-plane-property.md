@@ -2,8 +2,13 @@
 title: "Sovereignty is a control plane property"
 description: "Data residency tells you where bytes are stored. It does not tell you who controls identity, keys, audit evidence and recovery, or whether the operator can move the platform elsewhere."
 date: 2026-10-13
-lastmod: 2026-10-13
+lastmod: 2026-10-20
 draft: false
+socialImage: images/writing/sovereignty-control-plane-property.png
+socialImageAlt: Sovereignty is a control plane property, with five tests for operator control
+heroImage: images/writing/sovereignty-control-plane-property-hero.svg
+heroImageAlt: Five tests for operator control - authority, keys, evidence, continuity and exit
+cardImage: images/writing/sovereignty-control-plane-property-hero.svg
 ---
 
 Suppose a workload runs in Frankfurt and its data stays there. Location alone

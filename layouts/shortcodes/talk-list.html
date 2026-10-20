@@ -1,0 +1,17 @@
+{{- $group := .Get "group" -}}
+{{- $talks := index .Page.Params $group -}}
+<div class="talk-cards">
+  {{- range $talks }}
+  <article class="talk-card">
+    <div class="talk-card-copy">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+      {{- with .topics }}
+      <ul class="talk-topics" aria-label="{{ i18n "talkTopics" }}">
+        {{- range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      {{- end }}
+    </div>
+  </article>
+  {{- end }}
+</div>

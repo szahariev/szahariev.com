@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sovereignty is a control plane property</title>
+  <desc id="desc">Five connected checks for operator control: authority, keys, evidence, continuity and exit.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080b12"/>
+      <stop offset="1" stop-color="#141927"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <rect x="72" y="72" width="8" height="486" rx="4" fill="#4f8fdc"/>
+  <circle cx="1040" cy="92" r="230" fill="#4f8fdc" opacity=".08"/>
+  <circle cx="1110" cy="570" r="330" fill="#2c3a52" opacity=".16"/>
+
+  <text x="126" y="142" fill="#a8d2ff" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="3">TECHNICAL ESSAY</text>
+  <text x="126" y="238" fill="#eef1f5" font-family="Arial, sans-serif" font-size="54" font-weight="700">Sovereignty is a</text>
+  <text x="126" y="304" fill="#eef1f5" font-family="Arial, sans-serif" font-size="54" font-weight="700">control plane</text>
+  <text x="126" y="370" fill="#eef1f5" font-family="Arial, sans-serif" font-size="54" font-weight="700">property</text>
+  <text x="126" y="445" fill="#8896a8" font-family="Arial, sans-serif" font-size="25">Five tests for operator control</text>
+  <text x="126" y="530" fill="#c4cdd8" font-family="Menlo, Consolas, monospace" font-size="22">SZAHARIEV.COM</text>
+
+  <path d="M830 138V492" fill="none" stroke="#4f8fdc" stroke-width="2" stroke-opacity=".6"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="17" font-weight="700">
+    <circle cx="830" cy="150" r="8" fill="#71b0f5"/>
+    <rect x="865" y="120" width="230" height="60" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="892" y="157" fill="#eef1f5">01  AUTHORITY</text>
+
+    <circle cx="830" cy="235" r="8" fill="#71b0f5"/>
+    <rect x="865" y="205" width="230" height="60" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="892" y="242" fill="#eef1f5">02  KEYS</text>
+
+    <circle cx="830" cy="320" r="8" fill="#71b0f5"/>
+    <rect x="865" y="290" width="230" height="60" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="892" y="327" fill="#eef1f5">03  EVIDENCE</text>
+
+    <circle cx="830" cy="405" r="8" fill="#71b0f5"/>
+    <rect x="865" y="375" width="230" height="60" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="892" y="412" fill="#eef1f5">04  CONTINUITY</text>
+
+    <circle cx="830" cy="490" r="8" fill="#71b0f5"/>
+    <rect x="865" y="460" width="230" height="60" rx="6" fill="#141927" stroke="#2c3a52"/>
+    <text x="892" y="497" fill="#eef1f5">05  EXIT</text>
+  </g>
+</svg>

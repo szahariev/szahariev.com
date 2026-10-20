@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="shell page-shell{{ with .Params.portrait }} page-shell-with-aside{{ end }}">
-    <article class="prose">
+    <article class="prose{{ if .Params.wide }} prose-wide{{ end }}">
       <header class="page-header">
         {{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
         <h1>{{ .Title }}</h1>
@@ -12,6 +12,11 @@
           </p>
         {{ end }}
       </header>
+      {{ with .Params.heroImage }}
+        <figure class="article-hero">
+          <img src="{{ . | relURL }}" alt="{{ $.Params.heroImageAlt }}" width="1200" height="630">
+        </figure>
+      {{ end }}
       {{ .Content }}
     </article>
     {{ with .Params.portrait }}

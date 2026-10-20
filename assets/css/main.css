@@ -616,6 +616,10 @@ p {
   max-width: var(--reading);
 }
 
+.prose-wide {
+  max-width: 58rem;
+}
+
 .prose > :not(.page-header) + * {
   margin-top: 1rem;
 }
@@ -758,6 +762,18 @@ p {
   font-size: 1.15rem;
 }
 
+.article-hero {
+  overflow: hidden;
+  margin: 1.5rem 0 2.5rem;
+  border: 1px solid var(--steel);
+  border-radius: 0.25rem;
+  background: var(--obsidian);
+}
+
+.article-hero img {
+  width: 100%;
+}
+
 .article-diagram {
   margin: 2.25rem 0;
 }
@@ -832,22 +848,41 @@ p {
   text-transform: uppercase;
 }
 
-.article-list {
+.article-list,
+.talk-cards {
   border-top: 1px solid var(--steel);
+}
+
+.article-list {
+  counter-reset: article-card;
 }
 
 .article-card {
   display: grid;
-  grid-template-columns: 11rem minmax(14rem, 1fr);
-  gap: 0.8rem 2rem;
+  grid-template-columns: 3.5rem minmax(14rem, 1fr) 14rem;
+  align-items: start;
+  gap: 1rem 1.5rem;
   padding-block: 2rem;
   border-bottom: 1px solid var(--steel);
+  counter-increment: article-card;
 }
 
-.article-card .article-meta {
-  grid-row: 1 / span 2;
-  align-content: start;
-  margin: 0;
+.article-card::before,
+.talk-card::before {
+  color: var(--accent-strong);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}
+
+.article-card::before {
+  content: "0" counter(article-card);
+}
+
+.article-card-copy .article-meta {
+  margin: 0 0 0.65rem;
 }
 
 .article-card h2 {
@@ -859,8 +894,72 @@ p {
   text-decoration: none;
 }
 
-.article-card p:last-child {
+.article-card-copy > p:last-child {
+  margin-top: 0.7rem;
   color: var(--mist);
+}
+
+.article-card-image {
+  overflow: hidden;
+  border: 1px solid var(--steel);
+  border-radius: 0.2rem;
+  background: var(--obsidian);
+}
+
+.article-card-image img {
+  width: 100%;
+}
+
+.talk-cards {
+  counter-reset: talk-card;
+}
+
+.talk-card {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: 1rem;
+  padding-block: 1.8rem;
+  border-bottom: 1px solid var(--steel);
+  counter-increment: talk-card;
+}
+
+.talk-card::before {
+  content: "0" counter(talk-card);
+}
+
+.prose .talk-card h3 {
+  margin: 0 !important;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.talk-card-copy > p {
+  margin-top: 0.75rem;
+  color: var(--mist);
+}
+
+.prose .talk-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  color: var(--accent-soft);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.prose .talk-topics li {
+  margin: 0;
+}
+
+.prose .talk-topics li + li::before {
+  margin-right: 0.9rem;
+  color: var(--steel);
+  content: "·";
 }
 
 .error-page p:not(.eyebrow) {
@@ -1020,11 +1119,18 @@ p {
   }
 
   .article-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2.4rem minmax(0, 1fr);
+    gap: 0.8rem;
   }
 
-  .article-card .article-meta {
-    grid-row: auto;
+  .article-card-image {
+    width: min(100%, 24rem);
+    grid-column: 2;
+  }
+
+  .talk-card {
+    grid-template-columns: 2.4rem minmax(0, 1fr);
+    gap: 0.8rem;
   }
 
   .talk-list li {
