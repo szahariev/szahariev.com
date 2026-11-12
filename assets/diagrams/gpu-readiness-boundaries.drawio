@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-31T00:00:00.000Z" agent="szahariev.com" version="28.2.8" type="device">
+  <diagram id="gpu-readiness-boundaries" name="GPU readiness boundaries">
+    <mxGraphModel dx="920" dy="440" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="920" pageHeight="440" math="0" shadow="0" background="#0B0E16">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="The signals recover at different times" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=nowrap;overflow=visible;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="500" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="remove-line" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;dashed=1;dashPattern=4 4;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="292" y="72" as="sourcePoint"/><mxPoint x="292" y="397" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="restore-line" value="" style="edgeStyle=none;html=0;strokeColor=#2C3A52;strokeWidth=1.5;dashed=1;dashPattern=4 4;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="580" y="72" as="sourcePoint"/><mxPoint x="580" y="397" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <mxCell id="remove-label" value="plugin removed" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#8896A8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="232" y="48" width="120" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="restore-label" value="plugin ready" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#8896A8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="520" y="48" width="120" height="22" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="node-label" value="Node Ready" style="text;html=0;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="91" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="driver-label" value="Host driver" style="text;html=0;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="151" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="plugin-label" value="Device plugin" style="text;html=0;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="211" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="alloc-label" value="Allocatable GPU" style="text;html=0;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="271" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="job-label" value="CUDA Job" style="text;html=0;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="331" width="150" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="node-true" value="True throughout" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#172B47;strokeColor=#4F8FDC;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="91" width="680" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="driver-healthy" value="Healthy throughout" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#172B47;strokeColor=#4F8FDC;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="151" width="680" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="plugin-before" value="Ready" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="211" width="90" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="plugin-absent" value="Absent" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#8896A8;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="304" y="211" width="264" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="plugin-after" value="Ready" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#172B47;strokeColor=#4F8FDC;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="592" y="211" width="278" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="alloc-one-before" value="1" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Menlo;fontColor=#EEF1F5;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="271" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="alloc-zero" value="0" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Menlo;fontColor=#8896A8;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="352" y="271" width="330" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="alloc-one-after" value="1" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#172B47;strokeColor=#4F8FDC;strokeWidth=1.5;arcSize=12;fontFamily=Menlo;fontColor=#EEF1F5;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="694" y="271" width="176" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="job-not-submitted" value="Not submitted" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#8896A8;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="190" y="331" width="150" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="job-pending" value="Pending" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="352" y="331" width="330" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="job-passed" value="Runs and passes CUDA" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#172B47;strokeColor=#71B0F5;strokeWidth=2;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="694" y="331" width="176" height="42" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="time-arrow" value="" style="edgeStyle=none;html=0;strokeColor=#71B0F5;strokeWidth=1.5;endArrow=block;endFill=1;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="190" y="405" as="sourcePoint"/><mxPoint x="870" y="405" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="time-label" value="time" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="496" y="383" width="48" height="20" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -9,6 +9,11 @@ if ! command -v drawio >/dev/null 2>&1; then
   exit 1
 fi
 
+if ! command -v magick >/dev/null 2>&1; then
+  printf 'ImageMagick not found. Install it before exporting social images.\n' >&2
+  exit 1
+fi
+
 for source in "$diagram_dir"/*.drawio; do
   output=${source%.drawio}.svg
   drawio \
@@ -21,3 +26,23 @@ for source in "$diagram_dir"/*.drawio; do
     "$source"
   "$site_dir/scripts/prepare-diagram-svg.sh" "$output"
 done
+
+social_source=$diagram_dir/gpu-readiness-boundaries.drawio
+social_output=$site_dir/static/images/writing/gpu-readiness-boundaries.png
+social_raw=$(mktemp)
+trap 'rm -f "$social_raw"' EXIT INT TERM
+
+drawio \
+  --export \
+  --format png \
+  --theme light \
+  --width 1200 \
+  --output "$social_raw" \
+  "$social_source"
+
+magick "$social_raw" \
+  -resize 1120x \
+  -background '#0B0E16' \
+  -gravity center \
+  -extent 1200x630 \
+  "$social_output"

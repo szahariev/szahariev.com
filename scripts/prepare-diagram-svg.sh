@@ -18,6 +18,11 @@ case "$(basename -- "$diagram")" in
     diagram_title='Five sovereignty claims and their tests'
     diagram_description='Operator control depends on five claims: authority is tested by revocation, key custody by withholding access, evidence by independent verification, continuity by disconnection and exit by rehearsal.'
     ;;
+  gpu-readiness-boundaries.svg)
+    diagram_id=gpu-readiness-boundaries
+    diagram_title='GPU readiness signals recover at different times'
+    diagram_description='Node readiness and host driver health remain green while the device plugin is absent. The plugin later becomes ready, allocatable GPU capacity returns after another delay, and only then does the pending qualification Job run and pass CUDA.'
+    ;;
   sovereignty-control-path-bg.svg)
     diagram_id=control-path-bg
     diagram_title='Пълният път на управление в облака'

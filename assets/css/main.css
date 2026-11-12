@@ -662,6 +662,62 @@ p {
   margin-top: 0.6rem;
 }
 
+.article-table {
+  overflow-x: auto;
+  border: 1px solid var(--steel);
+  border-radius: 0.25rem;
+}
+
+.article-table:focus-visible {
+  outline: 0.2rem solid var(--accent-strong);
+  outline-offset: 0.2rem;
+}
+
+.prose table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.prose th,
+.prose td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+}
+
+.prose th:first-child,
+.prose td:first-child {
+  min-width: 6rem;
+}
+
+.prose th {
+  border-bottom: 1px solid var(--steel);
+  color: var(--frost);
+  background: var(--obsidian);
+  font-size: 0.82rem;
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+.prose tbody tr + tr {
+  border-top: 1px solid var(--steel);
+}
+
+.prose .table-align-center {
+  text-align: center;
+}
+
+.prose .table-align-right {
+  text-align: right;
+}
+
+.prose td.table-align-right {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 .career-timeline {
   position: relative;
   margin: 1.75rem 0 0;
