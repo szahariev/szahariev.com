@@ -23,6 +23,11 @@ case "$(basename -- "$diagram")" in
     diagram_title='GPU readiness signals recover at different times'
     diagram_description='Node readiness and host driver health remain green while the device plugin is absent. The plugin later becomes ready, allocatable GPU capacity returns after another delay, and only then does the pending qualification Job run and pass CUDA.'
     ;;
+  csi-node-registration.svg)
+    diagram_id=csi-node-registration
+    diagram_title='CSI node registration and driver sockets'
+    diagram_description='The node driver registrar creates a registration socket under the actual kubelet root. Kubelet discovers the driver there and uses a separate CSI socket to call the node plugin. The host endpoint and the path inside the Pod are different views of that socket.'
+    ;;
   sovereignty-control-path-bg.svg)
     diagram_id=control-path-bg
     diagram_title='Пълният път на управление в облака'

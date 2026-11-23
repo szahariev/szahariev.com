@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-13T00:00:00.000Z" agent="szahariev.com" version="28.2.8" type="device">
+  <diagram id="csi-node-registration" name="CSI node registration">
+    <mxGraphModel dx="860" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="860" pageHeight="450" math="0" shadow="0" background="#0B0E16">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Kubelet reaches the CSI driver through two sockets" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="820" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="Registration identifies the endpoint. CSI calls use a separate socket." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontColor=#8896A8;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="49" width="820" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="pod-boundary" value="" style="rounded=1;html=0;fillColor=none;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="20" y="100" width="260" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="pod-label" value="CSI NODE POD" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="220" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="host-boundary" value="" style="rounded=1;html=0;fillColor=none;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="310" y="100" width="320" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="host-label" value="HOST FILESYSTEM" style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Menlo;fontColor=#A8D2FF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="110" width="280" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="registrar" value="Node driver registrar" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#4F8FDC;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="220" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="plugin" value="CSI node plugin" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#4F8FDC;strokeWidth=1.5;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="285" width="220" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="registration-socket" value="plugins_registry/&#xa;&lt;driver&gt;-reg.sock" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Menlo;fontColor=#EEF1F5;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="330" y="150" width="280" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="csi-socket" value="plugins/&lt;driver&gt;/csi.sock" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#141927;strokeColor=#2C3A52;strokeWidth=1.5;arcSize=12;fontFamily=Menlo;fontColor=#EEF1F5;fontSize=13;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="330" y="285" width="280" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="root-note" value="Paths start at the actual&#xa;kubelet root on the node" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#8896A8;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="330" y="220" width="280" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="kubelet" value="Kubelet" style="rounded=1;whiteSpace=nowrap;html=0;fillColor=#172B47;strokeColor=#71B0F5;strokeWidth=2;arcSize=12;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=17;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="700" y="210" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="registrar-creates" value="" style="edgeStyle=none;html=0;strokeColor=#71B0F5;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="260" y="177" as="sourcePoint"/><mxPoint x="330" y="177" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="registrar-to-plugin" value="" style="edgeStyle=none;html=0;strokeColor=#8896A8;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="150" y="205" as="sourcePoint"/><mxPoint x="150" y="285" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="identity-label" value="read driver identity" style="text;html=0;strokeColor=none;fillColor=#141927;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#8896A8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="65" y="231" width="170" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="discover" value="" style="edgeStyle=none;html=0;strokeColor=#71B0F5;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="700" y="230" as="sourcePoint"/><mxPoint x="610" y="177" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="discover-label" value="discover" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#8896A8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="635" y="165" width="65" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="call-csi" value="" style="edgeStyle=none;html=0;strokeColor=#71B0F5;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="700" y="260" as="sourcePoint"/><mxPoint x="610" y="312" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="call-label" value="CSI calls" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#8896A8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="635" y="310" width="65" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="socket-to-plugin" value="" style="edgeStyle=none;html=0;strokeColor=#71B0F5;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="330" y="312" as="sourcePoint"/><mxPoint x="260" y="312" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="local-socket" value="Inside the Pod: /csi/csi.sock" style="text;html=0;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#8896A8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="35" y="345" width="230" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer" value="A running plugin does not prove kubelet can discover or reach its host endpoint." style="text;html=0;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontColor=#EEF1F5;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="408" width="820" height="26" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

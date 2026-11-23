@@ -14,7 +14,14 @@
       </header>
       {{ with .Params.heroImage }}
         <figure class="article-hero">
+          {{ if $.Params.heroImageZoom }}
+          <a class="article-hero-link" href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ i18n "openFullSizeDiagram" }}">
+            <img src="{{ . | relURL }}" alt="{{ $.Params.heroImageAlt }}" width="1200" height="630">
+            <span class="article-hero-link-label">{{ i18n "openFullSizeDiagram" }}</span>
+          </a>
+          {{ else }}
           <img src="{{ . | relURL }}" alt="{{ $.Params.heroImageAlt }}" width="1200" height="630">
+          {{ end }}
         </figure>
       {{ end }}
       {{ .Content }}

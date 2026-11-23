@@ -27,22 +27,25 @@ for source in "$diagram_dir"/*.drawio; do
   "$site_dir/scripts/prepare-diagram-svg.sh" "$output"
 done
 
-social_source=$diagram_dir/gpu-readiness-boundaries.drawio
-social_output=$site_dir/static/images/writing/gpu-readiness-boundaries.png
 social_raw=$(mktemp)
 trap 'rm -f "$social_raw"' EXIT INT TERM
 
-drawio \
-  --export \
-  --format png \
-  --theme light \
-  --width 1200 \
-  --output "$social_raw" \
-  "$social_source"
+for social_diagram in gpu-readiness-boundaries csi-node-registration; do
+  social_source=$diagram_dir/$social_diagram.drawio
+  social_output=$site_dir/static/images/writing/$social_diagram.png
 
-magick "$social_raw" \
-  -resize 1120x \
-  -background '#0B0E16' \
-  -gravity center \
-  -extent 1200x630 \
-  "$social_output"
+  drawio \
+    --export \
+    --format png \
+    --theme light \
+    --width 1200 \
+    --output "$social_raw" \
+    "$social_source"
+
+  magick "$social_raw" \
+    -resize 1120x \
+    -background '#0B0E16' \
+    -gravity center \
+    -extent 1200x630 \
+    "$social_output"
+done
